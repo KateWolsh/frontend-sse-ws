@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+</head>
+
+<body>
+  <div id="root">
+
+    <div class="modal" id="login-modal">
+      <div class="modal__content">
+        <div class="modal__header">Выберите псевдоним</div>
+        <div class="modal__body">
+
+          <div class="form__hint"></div>
+          <div class="form__group">
+
+            <label class="form__label"></label>
+            <input class="form__input" />
+            <button class="modal__ok">ОК</button>
+            <button class="modal__close">Отмена</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal hidden" id="chat-modal">
+      <div class="container">
+        <h1 class="chat__header">Chat Application</h1>
+        <div class="chat__connect">Connect to Chat</div>
+
+        <div class="chat__container">
+          <div class="chat__area">
+            <div class="chat__messages-container">
+              <div class="message__container message__container-yourself">
+                <div class="message__header" style="color: #20b1df;"></div>
+                <div class="message__content"></div>
+              </div>
+            </div>
+            <div class="chat__messages-input">
+              <form class="form">
+                <div class="form__group">
+                  <textarea type="text" class="form__input" placeholder="Type your message"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="chat__userlist">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
